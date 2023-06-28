@@ -51,6 +51,7 @@ func _process_state_walk(_delta):
 	#input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	input_vector = input_vector.normalized()
 
+
 	if input_vector.x < 0:
 		# Set the X-transform to be negative
 		$Sprite.scale.x = abs($Sprite.scale.x) * -1
